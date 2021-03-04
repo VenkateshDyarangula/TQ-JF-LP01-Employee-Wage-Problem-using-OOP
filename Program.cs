@@ -32,4 +32,3 @@ namespace UC4_SolvingUsing_Switch
         }
     }
 }
-
