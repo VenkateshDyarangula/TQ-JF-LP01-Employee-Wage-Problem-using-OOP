@@ -8,7 +8,7 @@ namespace UC8_Emp_Wage_Multiple_Companies
     {
         static void Main(string[] args)
         {
-            Program program = new Program();
+            UC8_Program program = new UC8_Program();
             program.computeEmpWage("DMart", 20, 2, 10);
             program.computeEmpWage("Reliance", 10, 4, 20);
         }
