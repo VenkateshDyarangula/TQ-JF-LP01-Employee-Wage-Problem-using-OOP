@@ -1,23 +1,23 @@
-#UC1
+#UC7
 using System;
 
-namespace UC1_Emp_Attendance
+namespace Day4FinalSol
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int IS_Full_TIME = 1;
-            Random random = new Random();
-            int empCheck = random.Next(0, 2);
-            if (empCheck == IS_Full_TIME)
-                Console.WriteLine("Emp is Present");
-            else
-                Console.WriteLine("Emp is Absent");
-            Console.ReadKey();
+                EmpWageBuilder empWageBuilder = new EmpWageBuilder();
+                empWageBuilder.addCompanyEmpWage("DMart", 20, 2, 10);
+                empWageBuilder.addCompanyEmpWage("Reliance", 10, 4, 20);
+                empWageBuilder.computeEmpWage();
+                //Console.WriteLine("Total Wage for DMart company: "+empWageBuilder.getTotalWage("DMart"));
+                Console.ReadKey();
+           
         }
     }
 }
+
 
 
 #UC2
@@ -206,3 +206,4 @@ namespace UC6_Emp_Wage_HrDays_Reached_ForMonth
         }
     }
 }
+
