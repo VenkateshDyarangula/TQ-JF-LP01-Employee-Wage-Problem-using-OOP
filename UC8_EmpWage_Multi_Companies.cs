@@ -2,7 +2,7 @@ using System;
 
 namespace UC8_Emp_Wage_Multiple_Companies
 {
-    public class Program
+    public class UC8_Program
     {
         public const int IS_PART_TIME = 1;
         public const int IS_FULL_TIME = 2;
