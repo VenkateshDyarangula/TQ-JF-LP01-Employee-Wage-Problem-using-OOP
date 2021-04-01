@@ -2,10 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace UC12_ArrayList_EmpWage
+namespace UC13_Store_Daily_Wage
 {
     public class CompanyEmpWage
     {
+
         public string company;
         public int empRatePerHour;
         public int numOfWorkingDays;

@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace UC12_ArrayList_EmpWage
+namespace UC13_Store_Daily_Wage 
 {
     class EmpWageBuilder : IEmployeeWage
     {
@@ -46,7 +46,7 @@ namespace UC12_ArrayList_EmpWage
                         break;
                 }
                 totalEmpHrs += empHrs;
-                Console.WriteLine("Day:" + totalWorkingDays + " Emp hrs " + empHrs);
+                Console.WriteLine("Day:" + totalWorkingDays + " Emp hrs " + empHrs + "  Daily Wage:" + (empHrs * companyEmpWage.empRatePerHour));
             }
             return totalEmpHrs * companyEmpWage.empRatePerHour;
         }
