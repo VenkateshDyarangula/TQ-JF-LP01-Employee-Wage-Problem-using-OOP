@@ -2,11 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace UC13_Store_Daily_Wage
+namespace UC14_getTotalWageByCompany
 {
     public class CompanyEmpWage
     {
-
         public string company;
         public int empRatePerHour;
         public int numOfWorkingDays;
@@ -27,11 +26,11 @@ namespace UC13_Store_Daily_Wage
         {
             return "Total Emp Wage for company: " + this.company + " is: " + this.totalEmpWage;
         }
-    }
-    public interface IEmployeeWage
-    {
-        public void addCompanyEmpWage(string company, int empRatePerHour, int numOfWorkingDays, int maxHoursPerMonth);
-        public int computeEmpWage(CompanyEmpWage companyEmpWage);
-        public void computeEmpWage();
+        public interface IEmployeeWage
+        {
+            public void addCompanyEmpWage(string company, int empRatePerHour, int numOfWorkingDays, int maxHoursPerMonth);
+            public int computeEmpWage(CompanyEmpWage companyEmpWage);
+            public void computeEmpWage();
+        }
     }
 }

@@ -1,10 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using static UC14_getTotalWageByCompany.CompanyEmpWage;
 
-namespace UC13_Store_Daily_Wage 
+namespace UC14_getTotalWageByCompany
 {
-    class EmpWageBuilder : IEmployeeWage
+    public class EmpWageBuilder : IEmployeeWage
     {
         public const int IS_FULL_TIME = 1;
         public const int IS_PART_TIME = 2;
@@ -50,5 +51,6 @@ namespace UC13_Store_Daily_Wage
             }
             return totalEmpHrs * companyEmpWage.empRatePerHour;
         }
+
     }
 }
