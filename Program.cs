@@ -1,15 +1,16 @@
 using System;
 
-namespace UC10_ManageEmp_Wageof_Mutliple_Comp
+namespace UC11_Interface_Approach
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            EmpWageBuilderArray empWageBuilder = new EmpWageBuilderArray();
-            empWageBuilder.addCompanyEmpWage("Dmart", 20, 2, 10);
-            empWageBuilder.addCompanyEmpWage("Reliance", 10, 4, 20);
-            empWageBuilder.computeEmpWage();
-        }
+            public static void Main(string[] args)
+            {
+                EmpWageBuilder empWageBuilder = new EmpWageBuilder();
+                empWageBuilder.addCompanyEmpWage("Dmart", 20, 2, 10);
+                empWageBuilder.addCompanyEmpWage("Reliance", 10, 4, 20);
+                empWageBuilder.computeEmpWage();
+            }
+        
     }
 }

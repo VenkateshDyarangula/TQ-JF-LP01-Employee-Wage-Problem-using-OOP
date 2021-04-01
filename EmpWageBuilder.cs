@@ -1,16 +1,17 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using static UC11_Interface_Approach.CompanyEmpWage;
 
-namespace UC10_ManageEmp_Wageof_Mutliple_Comp
+namespace UC11_Interface_Approach
 {
-    class EmpWageBuilderArray
+    class EmpWageBuilder : IEmployeeWage
     {
         public const int IS_FULL_TIME = 1;
         public const int IS_PART_TIME = 2;
         private int numOfCompany = 0;
         private CompanyEmpWage[] companyEmpWageArray;
-        public EmpWageBuilderArray()
+        public EmpWageBuilder()
         {
             this.companyEmpWageArray = new CompanyEmpWage[5];
         }
