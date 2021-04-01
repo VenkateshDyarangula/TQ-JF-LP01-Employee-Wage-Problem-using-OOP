@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace UC11_Interface_Approach
+namespace UC12_ArrayList_EmpWage
 {
     public class CompanyEmpWage
     {
@@ -26,11 +26,11 @@ namespace UC11_Interface_Approach
         {
             return "Total Emp Wage for company: " + this.company + " is: " + this.totalEmpWage;
         }
-        public interface IEmployeeWage
-        {
-            public void addCompanyEmpWage(string company, int empRatePerHour, int numOfWorkingDays, int maxHoursPerMonth);
-            public int computeEmpWage(CompanyEmpWage companyEmpWage);
-            public void computeEmpWage();
-        }
+    }
+    public interface IEmployeeWage
+    {
+        public void addCompanyEmpWage(string company, int empRatePerHour, int numOfWorkingDays, int maxHoursPerMonth);
+        public int computeEmpWage(CompanyEmpWage companyEmpWage);
+        public void computeEmpWage();
     }
 }
