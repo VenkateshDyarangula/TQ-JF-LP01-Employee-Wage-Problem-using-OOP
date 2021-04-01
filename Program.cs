@@ -1,16 +1,19 @@
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace UC8_Emp_Wage_Multiple_Companies
+namespace UC9_Save_TotalWage_forEach_Company
 {
-    public class MainClass
+    class Program
     {
         static void Main(string[] args)
         {
-            Program program = new Program();
-            program.computeEmpWage("DMart", 20, 2, 10);
-            program.computeEmpWage("Reliance", 10, 4, 20);
+            //  Console.WriteLine("Hello World!");
+            EmpWageBuilder dmart = new EmpWageBuilder("Dmart", 20, 2, 10);
+            EmpWageBuilder reliance = new EmpWageBuilder("Reliance", 10, 4, 20);
+            dmart.computeEmpWage();
+            Console.WriteLine(dmart.toString());
+            reliance.computeEmpWage();
+            Console.WriteLine(reliance.toString());
+
         }
     }
 }
